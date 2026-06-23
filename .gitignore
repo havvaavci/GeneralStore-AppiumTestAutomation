@@ -1,0 +1,65 @@
+##############################
+# MAVEN / BUILD OUTPUTS
+##############################
+target/
+out/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+##############################
+# REPORTS & SCREENSHOTS
+##############################
+reports/
+extent-reports/
+test-output/
+screenshots/
+logs/
+appium-logs/
+*.log
+*.tmp
+*.temp
+
+##############################
+# INTELLIJ IDEA
+##############################
+.idea/
+*.iml
+*.iws
+*.ipr
+
+
+##############################
+# ECLIPSE
+##############################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+tmp/
+
+##############################
+# VS CODE
+##############################
+.vscode/
+
+##############################
+# OS FILES
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# APPIUM RECORDINGS
+##############################
+*.mp4
+*.json
+
+##############################
+# JAVA
+##############################
+*.class

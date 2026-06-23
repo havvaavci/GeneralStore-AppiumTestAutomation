@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="General Store Appium Test Automation Suite">
+    <listeners>
+        <listener class-name="com.havva.generalstore.listeners.TestListener"/>
+    </listeners>
+    <test  name="General Store Test Execution">
+        <packages>
+            <package name="com.havva.generalstore.tests"/>
+        </packages>
+    </test>
+</suite>
