@@ -42,7 +42,7 @@ public class Driver {
             // 🔥 3) Driver capabilities
             UiAutomator2Options options = new UiAutomator2Options()
                     .setDeviceName(deviceName)
-                    .setApp(ConfigReader.get("appPath"))
+                    .setApp(new File(ConfigReader.get("appPath")).getAbsolutePath())
                     .setAutomationName("UiAutomator2");
 
             try {
