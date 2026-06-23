@@ -117,7 +117,8 @@ mvn test -DappPath=${APP_PATH} -Dappium.ip=${APPIUM_IP}
 ## ▶️ Demo
 
 📹 Real test run recorded via Vysor on a physical Android device.
-[Watch the Demo on LinkedIn](https://www.linkedin.com/posts/havva-avci_appium-mobileautomation-java-ugcPost-7475217166255108096-g9ht/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhcMSgBnx6efp-6MaVx2BNzgivnIKGCsyE)
+
+👉 [Watch the Demo on LinkedIn](https://www.linkedin.com/posts/havva-avci_appium-mobileautomation-java-ugcPost-7475217166255108096-g9ht/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhcMSgBnx6efp-6MaVx2BNzgivnIKGCsyE)
 ---
 
 ## 🚀 How to Run
