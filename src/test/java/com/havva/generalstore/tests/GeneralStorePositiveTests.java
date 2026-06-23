@@ -1,5 +1,6 @@
 package com.havva.generalstore.tests;
 
+import com.havva.generalstore.listeners.TestListener;
 import com.havva.generalstore.pages.FormPage;
 import com.havva.generalstore.pages.OrderCompletePage;
 import com.havva.generalstore.pages.ProductCatalogPage;
@@ -7,13 +8,16 @@ import com.havva.generalstore.pages.ShoppingCartPage;
 
 import org.testng.Assert;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.havva.generalstore.listeners.TestListener.class)
 public class GeneralStorePositiveTests {
 
 
 
     @Test
+
     public void tc01_validateGeneralStorePositiveFlow() {
         FormPage formPage = new FormPage();
         ProductCatalogPage productCatalogPage = new ProductCatalogPage();
