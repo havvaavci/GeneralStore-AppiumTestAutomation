@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Jenkins üzerinden override edilebilir
         APPIUM_IP   = "${params.APPIUM_IP ?: '127.0.0.1'}"
         APPIUM_PORT = "${params.APPIUM_PORT ?: '4723'}"
     }
@@ -24,18 +23,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo "📦 Installing Maven dependencies..."
-                sh "mvn -q -DskipTests clean install"
+                bat "mvn -q -DskipTests clean install"
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo "🚀 Running Appium tests..."
-                sh """
-                    mvn clean test \
-                    -Dappium.ip=${APPIUM_IP} \
-                    -Dappium.port=${APPIUM_PORT}
-                """
+                bat "mvn clean test -Dappium.ip=%APPIUM_IP% -Dappium.port=%APPIUM_PORT%"
             }
         }
 
