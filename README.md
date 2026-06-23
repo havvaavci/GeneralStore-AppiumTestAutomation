@@ -1,5 +1,9 @@
 # 📱 Appium Mobile Test Automation – GeneralStore
 
+![Jenkins](https://img.shields.io/badge/CI-Jenkins-D24939?logo=jenkins&logoColor=white)
+![Appium](https://img.shields.io/badge/Appium-2.x-purple?logo=appium)
+![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk)
+
 A mobile test automation framework built with Appium, Java, and TestNG for the GeneralStore Android application.
 
 ---
