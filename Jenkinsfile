@@ -44,8 +44,11 @@ pipeline {
 
     post {
         always {
+            echo "🧹 Cleaning up processes..."
+            bat 'taskkill /F /IM adb.exe /T || exit 0'
+            bat 'taskkill /F /IM node.exe /T || exit 0'
+            sleep(time: 5, unit: 'SECONDS')
             echo "🧹 Cleaning workspace..."
             cleanWs()
         }
     }
-}
