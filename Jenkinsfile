@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        APPIUM_IP   = "${params.APPIUM_IP ?: '127.0.0.1'}"
+        APPIUM_IP = "${params.APPIUM_IP ?: '127.0.0.1'}"
         APPIUM_PORT = "${params.APPIUM_PORT ?: '4723'}"
     }
 
@@ -52,3 +52,4 @@ pipeline {
             cleanWs()
         }
     }
+}
